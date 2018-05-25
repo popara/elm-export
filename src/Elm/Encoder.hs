@@ -151,7 +151,7 @@ instance HasEncoderRef ElmPrimitive where
   renderRef (ETuple2 x y) = do
     dx <- renderRef x
     dy <- renderRef y
-    return . parens $ "Tuple.mapFirst" <+> parens dx <+> ">> Tuple.mapSecond" <+> parens dy <+> ">> (\\( x, y ) -> Json.Encode.list [ x, y ])" <+> ">> Json.Encode.list"
+    return . parens $ "Tuple.mapFirst" <+> parens dx <+> ">> Tuple.mapSecond" <+> parens dy <+> ">> (\\( x, y ) -> Json.Encode.list [ x, y ])"
   renderRef (EDict k v) = do
     dk <- renderRef k
     dv <- renderRef v
