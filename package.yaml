@@ -13,6 +13,8 @@ license-file: LICENSE.txt
 github: krisajenkins/elm-export
 homepage: http://github.com/krisajenkins/elm-export
 stability: alpha
+default-extensions:
+- Strict
 extra-source-files:
 - test/*.elm
 dependencies:
